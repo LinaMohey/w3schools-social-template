@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="social.css">
+    <script src="https://kit.fontawesome.com/0fc07d5f07.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@1,300&family=Open+Sans:wght@300;400;500&family=PT+Serif:ital@0;1&family=Public+Sans:wght@300&family=Roboto:wght@100;300;400&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,200;1,600&display=swap"
+        rel="stylesheet">
+    <title>Social</title>
+</head>
+
+<body>
+    <!-- Header starts -->
+    <header>
+        <!--Logo starts -->
+        <div class="logo">
+
+            <i class="fa-solid fa-house-chimney"></i>
+            <span>Logo</span>
+        </div>
+        <!--Logo ends -->
+
+        <!-- The header icons starts -->
+        <div class="header-icons">
+            <!-- icons starts -->
+            <div class="icons">
+                <!-- Wrapping the global icon starts -->
+                <div class=" icon global">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="msg globe"> News</span>
+                </div>
+
+                <!-- Wrapping the global icon ends -->
+                <!-- Wrapping the user icon starts -->
+                <div class="icon user">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="msg user"> Account seeting</span>
+                </div>
+                <!-- Wrapping the user icon ends -->
+                <!-- Wrapping the  enevelope starts -->
+                <div class=" icon envelope">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class=" msg envelope"> Messages</span>
+                </div>
+                <!-- Wrapping the enevelope icon ends -->
+                <!-- Wrapping the notifications starts-->
+                <div class=" icon notification">
+                    <!-- Notifcation pop up starts-->
+                    <div class=" notification-icon">
+                        <i class="fa-solid fa-bell"></i>
+                        <span> 3</span>
+                    </div>
+                    <!-- Notifcation pop up ends -->
+                    <!-- Notification messages starts -->
+                    <div class=" notificaitons">
+                        <p> One new friend request</p>
+                        <p> John doe posted on your wall</p>
+                        <p> Jane likes your post</p>
+                    </div>
+                    <!-- Notification messages ends -->
+                </div>
+                <!-- Wrapping the notifications ends-->
+            </div>
+            <!-- icons ends -->
+            <!-- image header starts -->
+            <div class="image-header">
+                <div class="holder-image">
+                    <img src="https://www.w3schools.com/w3images/avatar2.png" alt="img-header">
+                </div>
+            </div>
+            <!-- image header ends -->
+        </div>
+        <!-- The header icons ends -->
+        <!-- Menu bar starts-->
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+            <!-- Pop-up menu links starts -->
+            <div class="menu-links">
+                <ul>
+                    <li>
+                        Link 2
+                    </li>
+                    <li>
+                        Link 3
+                    </li>
+                    <li>
+                        My Profile
+                    </li>
+                </ul>
+            </div>
+            <!-- Pop-up menu links ends -->
+        </div>
+        <!-- Menu bar ends-->
+    </header>
+    <!-- Header ends -->
+    <!-- Main container for flexing the boxes starts -->
+    <div class="main-container">
+        <!-- Box one starts -->
+        <div class="box-one">
+            <!-- Profile starts -->
+            <div class="box profile">
+                <!-- Ttile section starts -->
+                <div class="title">
+                    <h3> My Profile</h3>
+                    <img src="https://www.w3schools.com/w3images/avatar3.png" alt="profile-image">
+                </div>
+                <!-- Ttile section ends -->
+                <hr>
+                <!-- Profile information section starts -->
+                <div class="information">
+                    <!-- Job starts -->
+                    <div class="job info">
+                        <i class="fa-solid fa-pencil icon"></i>
+                        <span>Designer,UI</span>
+                    </div>
+                    <!-- Job ends -->
+                    <!-- Address starts -->
+                    <div class="address info">
+                        <i class="fa-solid fa-house-chimney icon"></i>
+                        <span>London,UK</span>
+                    </div>
+                    <!-- Address ends -->
+                    <!-- date starts -->
+                    <div class="date info ">
+                        <i class="fa-solid fa-cake icon"></i>
+                        <span>April 1,1988</span>
+                    </div>
+                    <!-- date ends -->
+                </div>
+                <!-- Profile information section ends -->
+            </div>
+            <!-- Profile ends -->
+            <!-- Interest starts -->
+            <div class="interests">
+                <!-- Interest box starts -->
+                <div class="interest box " onclick="myFunction()">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <span>My Groups</span>
+                </div>
+                <div class="text" id="text">
+                    Some text...
+                </div>
+                <!-- Interest box ends -->
+
+                <!-- Interest box starts -->
+                <div class="interest box " onclick="myFunction2()">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>My Events</span>
+                </div>
+                <div class="text" id="text2">
+                    Some text...
+                </div>
+                <!-- Interest box ends -->
+                <!-- Interest box starts -->
+                <div class="interest box" onclick="myFunction3()">
+                    <i class="fa-solid fa-users"></i>
+                    <span>My Photos</span>
+                </div>
+                <div class="photos" id="photo">
+
+                    <img src="https://www.w3schools.com/w3images/lights.jpg">
+                    <img src="https://www.w3schools.com/w3images/nature.jpg">
+                    <img src="https://www.w3schools.com/w3images/mountains.jpg">
+                    <img src="https://www.w3schools.com/w3images/forest.jpg">
+                    <img src="https://www.w3schools.com/w3images/nature.jpg">
+                    <img src="https://www.w3schools.com/w3images/lights.jpg">
+                </div>
+                <!-- Interest box ends -->
+
+            </div>
+            <!-- Interest ends -->
+            <!-- Tags section starts -->
+            <div class="tags">
+                <h3 class-="tags"> Interests</h3>
+                <!--div holding the tags starts-->
+                <div class="tag">
+                    <span> News</span>
+                    <span> W3Schools</span>
+                    <span> Labels</span>
+                    <span> Games</span>
+                    <span> Friends</span>
+                    <span> Games</span>
+                    <span> Friends</span>
+                    <span> Games</span>
+                    <span> Family</span>
+                    <span> Food</span>
+                    <span> Design</span>
+                    <span> Art</span>
+                    <span> Photos</span>
+                </div>
+                <!--div holding the tags starts-->
+            </div>
+            <!-- Tags section ends -->
+            <div class="message" id="msg">
+                <div class="content">
+                    <span>Hey!</span>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                </div>
+                <p> People are looking at your profile. Find out who.</p>
+            </div>
+        </div>
+        <!-- Box one ends -->
+        <!-- Box two starts -->
+        <div class="box-two">
+            <!-- status starts -->
+            <div class="status">
+                <!-- status content starts -->
+                <div class="status-content">
+                    <h4> Social Media template by w3.css</h4>
+                    <p> Status: Feeling Blue</p>
+                    <button class="btn1">
+                        <i class="fa-solid fa-pencil"></i>
+                        <span>Post</span>
+                    </button>
+                </div>
+                <!-- status content ends -->
+            </div>
+            <!-- status ends -->
+            <!-- Posts starts -->
+            <div class="posts post1 ">
+                <!-- POST ONE STARTS -->
+
+                <div class="post">
+                    <!-- Profile post starts -->
+                    <div class="profile-post">
+                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="avatar">
+                        <h4> John Doe</h4>
+
+                    </div>
+                    <!-- Post time starts -->
+                    <!-- Profile post ends -->
+
+                    <div class="time">
+                        <p> 1 min</p>
+                    </div>
+                    <!-- Post time ends -->
+                </div>
+                <hr>
+                <!-- Post content starts  -->
+                <div class="post-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et <br> dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip<br>
+                        ex ea commodo consequat.
+                    </p>
+
+                    <div class="post-image">
+                        <img src="https://www.w3schools.com/w3images/lights.jpg">
+                        <img src="https://www.w3schools.com/w3images/nature.jpg">
+                    </div>
+                    <div class="buttons">
+                        <button class="btn1">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </button>
+                        <button class="btn2">
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- POST ONE ENDS -->
+            <!-- POST TWO STARTS -->
+            <div class="posts post2">
+                <div class="post">
+                    <!-- Profile post starts -->
+                    <div class="profile-post">
+                        <img src="https://www.w3schools.com/w3images/avatar5.png" alt="avatar">
+                        <h4> Jane Doe</h4>
+
+                    </div>
+                    <!-- Post time starts -->
+                    <!-- Profile post ends -->
+
+                    <div class="time">
+                        <p> 16 min</p>
+                    </div>
+                    <!-- Post time ends -->
+                </div>
+                <hr>
+                <!-- Post content starts  -->
+                <div class="post-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et <br> dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip<br>
+                        ex ea commodo consequat.
+                    </p>
+                    <div class="buttons">
+                        <button class="btn1">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </button>
+                        <button class="btn2">
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Post content ends  -->
+            </div>
+            <!-- Posts end -->
+            <!-- POST TWO ENDS -->
+
+            <!-- POST THREE STARTS -->
+            <div class="posts post3">
+                <div class="post">
+                    <!-- Profile post starts -->
+                    <div class="profile-post">
+                        <img src="https://www.w3schools.com/w3images/avatar6.png" alt="avatar">
+                        <h4> Angie Jane</h4>
+
+                    </div>
+                    <!-- Post time starts -->
+                    <!-- Profile post ends -->
+
+                    <div class="time">
+                        <p> 32 min</p>
+                    </div>
+                    <!-- Post time ends -->
+                </div>
+                <hr>
+                <!-- Post content starts  -->
+                <div class="post-content">
+                    <p>
+                        Have you seen this?
+                    </p>
+                    <div class="image">
+                        <img src="https://www.w3schools.com/w3images/nature.jpg">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et <br> dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip<br>
+                        ex ea commodo consequat.
+                    </p>
+                    <div class="buttons">
+                        <button class="btn1">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </button>
+                        <button class="btn2">
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Post content ends  -->
+            </div>
+            <!-- Posts end -->
+            <!-- POST TREE ENDS -->
+        </div>
+        <!-- Box two ends -->
+        <!-- Box Three starts -->
+        <div class="box-three">
+            <!-- Events starts -->
+            <div class="event-container">
+                <div class="events">
+                    <h3> Upcoming Events</h3>
+                    <img src="https://www.w3schools.com/w3images/forest.jpg" alt="event">
+                    <!-- Event information starts -->
+                    <div class="events-info">
+                        <h4> Holiday</h4>
+                        <p> Friday 15:00</p>
+                        <button class="btn3">
+                            Info
+                        </button>
+                    </div>
+                    <!-- Event information starts -->
+                </div>
+
+                <!-- Friend request starts -->
+                <div class=" events request">
+                    <h3> Friend Request</h3>
+                    <img src="https://www.w3schools.com/w3images/avatar6.png" alt="event">
+                    <!-- Event information starts -->
+                    <h4> Jane doe</h4>
+                    <div class="button-req">
+                        <i class="fa-solid fa-check"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <!-- Events Ends -->
+
+                <!--Ads starts -->
+
+                <div class="ads">
+                    ADS
+                </div>
+                <!--Ads ends -->
+                <!-- Bug starts-->
+                <div class="bug">
+                    <i class="fa-solid fa-bug"></i>
+                </div>
+                <!-- Bug ends-->
+            </div>
+        </div>
+        <!-- Box three ends -->
+    </div>
+    <!-- Main container for flexing the boxes ends -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            Footer
+        </div>
+        <p> Powered by <a href="#"> w3.css</a></p>
+        </div>
+    </footer>
+    <!-- Scripts starts -->
+    <script>
+
+        // Script one starts
+        function myFunction() {
+            document.getElementById("text").style.display = "block";
+        }
+        // Script one ends
+        // Script two starts
+        function myFunction2() {
+            document.getElementById("text2").style.display = "block";
+        }
+        // Script two ends
+        // Script three starts
+        function myFunction3() {
+            document.getElementById("photo").style.display = "flex";
+        }
+        // Script three ends
+        // Script four starts
+        function hideMenu() {
+            document.getElementById("msg").style.display = "none";
+        }
+    // Script five ends
+    </script>
+    <!-- Scripts ends -->
+</body>

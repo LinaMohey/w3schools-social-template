@@ -1,0 +1,1047 @@
+/* Variables */
+:root{
+    --dark-blue:#3a4b53;
+    --slightly-dark-blue:#4d636f;
+    --light-blue:#57707d;
+    --dark-grey:#bfbfbf;
+    --light-grey:#f2f2f2;
+    --white:#fff;
+    --shadow:0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+/* Resets */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+:root{
+    font-size: 10px;
+}
+@media (max-width:1250px){
+    :root{
+        font-size: 15px;
+    }
+}
+/* Basic style */
+body{
+    background-color: #eee;
+ font-family: 'Open Sans', sans-serif;
+}
+
+/* Header starts */
+header{
+display:flex;
+height:45px;
+    background-color: var(--slightly-dark-blue);
+}
+/* Header ends */
+
+/* Logo starts */
+div.logo{
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem; 
+    display: flex;
+    align-items: center; 
+}
+
+div.logo span,i{
+    display: inline-block;
+}
+
+@media (max-width:600px){
+    div.logo{
+        font-size:1.2rem;
+      padding: 1rem;
+    }
+}
+
+div.logo:hover{
+    background-color: var(--dark-grey);
+}
+
+/* i inside the logo starts  */
+div.logo i{
+    padding-right: 0.8rem;
+}
+
+/* i inside the logo ends  */
+/* Logo ends */
+
+/* Header-icons starts */
+div.header-icons{
+       display: flex;
+       align-items: center;
+       justify-content:space-between;
+       width: 100%;
+       cursor: pointer;
+}
+
+@media (max-width:600px){
+    div.header-icons{
+       display: none;
+    }
+}
+/* Header-icon ends */
+
+/* Icons starts */
+div.icons i{
+      font-size: 1.4rem;
+      color: white;
+      padding:1.6rem;
+}
+
+div.icons i:hover{
+    background-color: var(--white);
+    color:black;
+     
+}
+/* Icons ends */
+
+/* Icon wrapping starts */
+div.icon{
+    display: inline-block;
+    position: relative;
+}
+
+/* Icon wrapping ends */
+
+/* Msg inside the icon starts */
+span.msg{
+   display: none;
+   position: absolute;
+   border: 1px solid rgba(0, 0, 0, 0.384);
+   background-color: rgba(255, 255, 255, 0.973);
+   padding: 0.5rem 1rem;
+   font-size: 1rem;
+ top:30px;
+   left: 20px;
+}
+
+span.msg.user{
+min-width:100px;
+}
+
+div.icon:hover .msg{
+    display: block;
+}
+
+@media (max-width:1250px){
+    div.icon:hover .msg{
+       display: none;
+    }
+}
+/* Msg inside the icon ends */
+
+/* Notification-icon style starts */
+div.notification-icon{
+    display: inline-block;
+    position: relative;
+}
+/* Notification-icon style ends */
+
+/* The span inside the notification icon starts */
+div.notification-icon span{
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    font-size: 0.8rem;
+    color: var(--white);
+    text-align: center;
+    background: #2eb82e;
+    border:1px solid #2eb82e;
+    width:1.5rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+@media (max-width:1250px){
+  div.notification-icon span{
+         top: 1.2rem;
+    }
+}
+/* The span inside the notification icon ends */
+
+/* Notification message starts */
+.icon.notification div.notificaitons {
+    display: none;
+    width: 15rem;
+     border: 1px solid rgba(0, 0, 0, 0.384);
+   background-color: rgba(255, 255, 255, 0.973);
+    position: absolute;
+   top:25px;
+   left: 20px;
+}
+
+@media (max-width:1250px){
+ .icon.notification div.notificaitons{
+         top:6.5rem;
+         left: 0;
+    }
+}
+.icon.notification div.notificaitons p {
+padding:1rem;
+
+}
+
+div.icon.notification:hover div.notificaitons{
+    display: block;
+}
+/* Notification message ends */
+
+/* Header image starts */
+div.image-header img{
+ margin: 1.1rem ;
+    width: 20px;
+    height:21px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+div.image-header:hover .holder-image {
+   
+    background-color: var(--white);
+}
+/* Header image ends */
+
+/* Menu bar starts */
+div.menu-bar{
+    display: none;
+    align-self: center;
+    margin-left: auto;
+}
+
+div.menu-bar i{
+    font-size: 1.2rem;
+    color: white;
+   padding: 0.9rem 1.2rem ;
+}
+
+div.menu-bar:hover i {
+    background-color: var(--white);
+    color: black;
+}
+@media (max-width:600px){
+    div.menu-bar{
+       display: block;
+    }
+
+}
+/* Menu bar ends */
+
+/* Menu-links starts */
+div.menu-links{
+    display: none;
+    position: absolute;
+    left:0;
+    background-color: var(--slightly-dark-blue);
+    width: 100%;
+}
+
+div.menu-links ul{
+    list-style: none;
+}
+
+div.menu-links li{
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:var(--white)
+}
+
+@media (max-width:600px){
+    div.menu-bar:hover div.menu-links{
+       display: block;
+    }
+
+}
+/* Menu-Links ends */
+
+  div.main-container{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+  
+}
+
+@media (max-width:600px){
+   div.main-container{
+   display: block;
+    } 
+
+}
+
+ div.box-one{
+margin: 2rem;
+ }
+
+ div.box-two{
+     margin: 2rem;
+    
+ }
+
+ div.box-three{
+     margin: 2rem;
+    
+ }
+
+ @media (max-width:600px){
+ div.box-one{
+   margin: 1rem;
+ 
+ }
+
+ div.box-two{
+     margin: 1rem 2rem;
+ }
+
+ div.box-three{
+     margin:1rem;
+ }
+
+ }
+
+/* Profile starts*/
+div.profile{
+    background-color: var(--white);
+    max-width: 25rem;
+}
+/* Profile ends */
+
+/* Title starts */
+div.title{
+    text-align: center;
+}
+
+div.title h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+div.title img{
+    padding: 0.5rem 0;
+    text-align: center;
+    width: 7rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* Title ends */
+hr{
+ border-top:none ;
+    margin:0 1rem;
+}
+
+/* Information section starts */
+div.information{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+div.info{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+div.info .icon{
+    padding-right: 1.5rem;
+    color: var(--light-blue);
+}
+/* Information section ends */
+
+/* Interest starts */
+div.interests{
+    max-width: 25rem;
+    margin-top: 2rem;
+    box-shadow: var(--shadow);
+}
+/* Interest ends */
+
+/* Interest box starts */
+div.interest.box{
+    box-shadow: var(--shadow);
+background-color: var(--light-blue);
+padding: 0.8rem 0.5rem;
+color: var(--white);
+cursor: pointer;
+}
+
+div.interest.box:hover{
+    background-color: var(--dark-grey);
+    color: black;
+}
+/* Interest box ends */
+
+/* Interest box icon starts */
+div.interest.box i{
+    padding: 0 0.8rem;
+}
+/* Interest box icon ends*/
+
+/* Interest box span starts */
+div.interest.box span{
+   font-size: 1.1rem;
+}
+
+@media (max-width:600px){
+div.interest.box span{
+  font-size: 1rem; 
+}
+  } 
+
+/* Interest box icon ends */
+
+/* Interest box text starts */
+div.text{
+background: white;
+padding:1rem;
+height:4rem;
+}
+
+@media (max-width:600px){
+    div.text{
+    padding:1rem;
+}
+}
+/* Interest box text ends */
+
+#text {
+  display: none;
+}
+#text2{
+    display: none;
+}
+ /* Interest box photos starts */ 
+div.photos{
+    box-sizing: border-box;
+    background-color: var(--white);
+    padding: 2rem 1rem;
+   display:flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   justify-content: space-around;
+}
+ /* Interest box photos ends */ 
+
+ /* Interest box image starts */  
+div.photos img{
+   width: 40%;
+flex-grow: 1;   
+}
+
+#photo{
+    display: none;
+}
+@media (max-width:600px){
+   div.photos img{
+   width: 100%;     
+}
+}
+ /* Interest box image ends */  
+
+ /* Tag section starts */
+ div.tags{
+    background-color: var(--white);
+    max-width: 25rem;
+    padding: 1rem;
+   padding-bottom: 1rem;
+    margin-top: 2rem;
+    box-shadow: var(--shadow);
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+ /* Tag heading starts */
+div.tags h3{
+
+    font-weight: 500;
+}
+ /* Tag heading ends */
+
+ div.tag{
+     margin-top: 1rem;
+ }
+ /* Tag span starts */
+div.tag span{
+    display: inline-block;
+    padding:0.2rem 0.5rem;
+    font-size: 0.8rem;
+    color: white;
+    margin-top: 0.3rem;
+    font-weight: 400;
+}
+
+ div.tags span:nth-of-type(1){
+     background-color: #303e45;
+ }
+ div.tags span:nth-of-type(2){
+     background-color: var(--dark-blue);
+ }
+ div.tags span:nth-of-type(3){
+     background-color:var(--slightly-dark-blue)
+ }
+ div.tags span:nth-of-type(4){
+     background-color: var(--light-blue);
+ }
+ div.tags span:nth-of-type(5){
+     background-color: var(--light-blue);
+ }
+ div.tags span:nth-of-type(6){
+     background-color:  #607d8b;
+ }
+ div.tags span:nth-of-type(7){
+     background-color: #7d97a5 ;
+ }
+ div.tags span:nth-of-type(8){
+     background-color: #9eb1bb;
+ }
+ div.tags span:nth-of-type(9){
+     background-color: #9eb1bb;;
+ }
+ div.tags span:nth-of-type(10){
+     background-color: var(--light-grey);
+     color: black;
+ }
+ div.tags span:nth-of-type(11){
+     background-color:  var(--light-grey);
+     color: black;
+ }
+
+ @media (max-width:600px){
+   div.tags {
+   display: none;  
+}
+ }
+ /* Tag span ends */
+
+ /* Message box starts */
+ div.message{
+    padding: 1rem;
+    border: 1px var(--dark-grey) solid;
+      border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+     margin-top:2rem;
+      max-width: 25rem;
+     height: fit-content;
+     background-color:  #dfe5e8;
+      box-shadow: var(--shadow);
+ }
+ /* Message box ends */
+
+ /* Message content starts  */
+ div.content{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ /* Message content ends  */
+
+ /* message span starts */
+ div.content span{
+font-weight: 500;
+font-size: 1.2rem;
+margin-bottom: 1.5rem;
+ }
+  /* message span ends */
+
+   /* message icon starts */
+ div.content i{
+     margin-top:-29px;
+     margin-right: -11px;
+     padding:0.5rem 1rem;
+background-color:#becbd2 ;
+font-size: 1.2rem;
+cursor: pointer;
+ }
+
+ div.content i:hover{
+background-color:var(--dark-grey) ;
+ }
+
+ /* message icon ends */
+
+  /* message p starts */
+ div.message p{
+     font-size: 1.1rem;
+     font-weight: 400;
+ } 
+   /* message p starts */
+
+ @media (max-width:600px){
+    div.message{
+    display: none;
+}
+}
+
+/* Status starts */
+div.status{
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    max-width: 60rem;
+    padding: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* Status ends */
+
+ /* Status content h4 starts */ 
+div.status-content h4{
+    font-weight: 300;
+    color: #636464d3;
+    padding-bottom: 1rem;
+}
+
+@media (max-width:600px){
+    div.status-content h4{
+   font-size: 0.9rem;
+   font-weight: 500;
+}
+}
+ /* Status content h4 ends */ 
+
+
+ /* Status content p starts */
+div.status-content p{
+    border: 1px  solid #6364645b ;
+    padding: 0.5rem 1rem;  
+}
+/* Status content p ends */
+
+@media (max-width:600px){
+  div.status-content p{
+   font-size: 0.9rem;
+   font-weight: 400;
+}
+}
+
+/* Button starts */
+button{
+    margin-top: 1rem;
+display: inline-block;
+   padding:0.8rem 1rem;
+   color: var(--white);
+   background-color: var(--light-blue) ;
+   border: none;
+   display: flex;
+   align-items: center; 
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--dark-grey);
+    color: black;
+}
+/* Button ends */
+
+/* Button icon starts */
+button i{
+    padding-right:0.5rem ;
+    font-size: 1rem;
+}
+ button span{
+    font-size:1rem;
+}
+
+/* Button span ends */
+
+/* Posts starts */
+
+@media (max-width:600px){
+  button i{
+   font-size: 1rem;
+}
+}
+/* Button icon ends */
+
+div.posts{
+    max-width: 60rem;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* Posts ends */
+
+/* Profile post starts */
+div.posts .post .profile-post{
+    display: flex;
+    align-items: center;
+    padding: 1rem; 
+    padding-bottom: 2rem;
+}
+/* Profile post ends */
+
+/* Profile post img starts */
+div.posts .post .profile-post img{
+    width: 4rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* Profile post img ends */
+
+/* Profile post h4 starts */
+div.posts .post .profile-post h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-left: 1rem;
+}
+/* Profile post h4 ends */
+
+/* A post starts */
+div.post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0; 
+}
+/* A post ends */
+
+/* Time post starts */
+div.post .time{
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: var(--dark-grey)
+}
+/* Time post starts */
+
+/* Post content starts */
+div.post-content{
+    padding:1rem;
+}
+/* Post content ends */
+
+/* Post content img starts */
+div.post-content img{
+    padding-top: 1rem;
+}
+
+div.posts .post-content p{
+    font-size: 1rem;
+}
+/* Post content img ends */
+
+/* Post img starts for flex */ 
+.post-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.9rem;
+}
+
+.post-image img{
+    width:40%;
+    flex:1;
+}
+/* Post img ends for flex */ 
+
+/* Post buttons starts */
+div.buttons{
+    display: flex;
+    gap: 0.5rem;
+}
+button.btn2{
+    background-color: var(--dark-blue);
+}
+
+
+button.btn2:hover{
+    background-color: var(--dark-grey);
+}
+/* Post buttons ends */
+
+/* Post three img starts */
+div.post3 img{
+width: 100%;
+}
+
+ @media (max-width:600px){
+    div.post1 img{
+   width:100%
+}
+ }
+ 
+    /* Poster starts*/
+     div.posts .post .profile-post{
+    padding-bottom: 0.2rem;
+     }
+
+      div.posts .post .profile-post h4{
+          font-size: 1.4rem;
+      }
+      /* Poster ends */
+
+/* Events Starts */
+
+div.events-container{
+    max-width: 30rem;
+}
+
+div.events{
+    margin: auto;
+   border-radius:5px ;
+   max-width: 18rem;
+   text-align: center;
+   padding: 1rem;
+   background-color: var(--white);
+   box-shadow: var(--shadow);
+   -webkit-border-radius:5px ;
+   -moz-border-radius:5px ;
+   -ms-border-radius:5px ;
+   -o-border-radius:5px ;
+}
+
+@media (max-width:600px){
+div.events{
+    max-width: 95%;
+}
+}
+/* Events ends */
+
+/* Events h3 Starts */
+div.events h3{
+    font-weight: 400;
+   padding-bottom: 1rem;
+}
+
+@media (max-width:600px){
+    div.events h3{
+       font-size: 1rem
+    }
+}
+/* Events h3 ends */
+
+/* Events img Starts */
+div.events img{
+    width: 100%;
+}
+/* Events img ends */
+
+/* Events h4 Starts */
+div.events-info h4{
+    font-size: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width:600px){
+    div.events h4{
+           font-size: 1rem;   
+           font-weight: 600; 
+    }
+}
+/* Events h4 ends */
+
+/* Event buttons starts */
+div.events-info button.btn3{
+      display: inline-block;
+      text-align: center;
+      margin: auto;
+      width:100%;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      padding:0.9rem;
+      background-color: #bfbfbf65;
+      color: black;
+}
+
+div.events-info button.btn3:hover{
+     background-color: var(--dark-grey);
+      color: white;
+}
+
+@media (max-width:600px){
+    div.events-info button.btn3{
+      font-size: 1rem;
+      margin-top: 0.8rem;
+      padding:0.5rem;
+}
+}
+/* Event buttons ends */
+
+/* Event request starts */
+div.request{
+    margin-top: 2rem;
+}
+@media (max-width:600px){
+    div.request{
+    margin-top: 1rem;
+     }
+}
+/* Event request ends */
+
+/* Event request img starts */
+div.request img{
+    width:50%
+}
+/* Event request img ends */
+
+/* Event request h4 starts */
+div.request h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding:1rem 0;
+}
+/* Event request h4 starts */
+
+/* Request buttons icons starts */
+div.button-req i{
+    padding: 0.5rem 0.8rem;
+    width:49%;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+@media (max-width:600px){
+    div.button-req i{
+        padding:1.5rem;
+   margin-bottom: 1rem;
+    width:100%;
+    font-size: 1.2rem;
+        display: inline-block;
+}
+}
+
+div i.fa-check{
+color:var(--white);
+ background-color:#5dd55d;
+ opacity:0.8
+}
+
+div i.fa-check:hover{
+color:gray;
+ background-color: var(--dark-grey);
+ cursor:pointer;
+}
+
+div.button-req i.fa-xmark{
+color:var(--white);
+background-color: red;
+cursor:pointer;
+opacity:0.6
+}
+
+
+div.button-req i.fa-xmark:hover{
+color:gray;
+ background-color: var(--dark-grey)
+}
+
+/* Request buttons ends */
+
+/* Ads starts */
+div.ads{
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 18rem;
+    background-color: var(--white);
+    text-align: center;
+    padding:2.5rem 0;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media (max-width:600px){
+div.ads{
+    max-width:95%
+}
+
+}
+/* Ads ends */
+
+/* Bug starts */
+div.bug{
+ margin-top: 2rem;
+ margin: auto;
+ max-width: 18rem;
+ background-color: var(--white);
+ text-align: center;
+ padding: 2.5rem;
+ font-size: 2.5rem;
+ box-shadow: var(--shadow);
+ border-radius: 5px;
+ margin-bottom: 2rem;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+}
+
+@media (max-width:600px){
+div.bug{
+    max-width:95%
+}
+}
+/* Bug ends */
+
+
+/* Footer starts */
+
+
+div.footer{
+    margin-top: 2rem;
+    background-color: var(--slightly-dark-blue);
+    height: 50px;
+    padding: 1.5rem;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: auto;
+}
+footer p{
+    background-color: var(--dark-blue);
+    height: 30px;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+}
+
+footer p a{
+    color: white;
+}
+/* Footer ends */
+
+@media (max-width:600px){
+div.footer{
+   font-size: 1rem;
+   padding: 1rem;
+}
+footer p{
+    font-size: 0.7rem;
+   padding: 0.8rem 1.3rem;
+}
+}
